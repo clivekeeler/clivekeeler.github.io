@@ -12,6 +12,7 @@ images/launcher-icon-3x.png
 images/launcher-icon-4x.png
 styles/w3-theme-green.css
 styles/w3.css
+styles/style.css
 scripts/ergdata.js
 manifest.json
 manifest.appcache
