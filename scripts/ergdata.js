@@ -40,7 +40,7 @@ function myFunction() {
   document.getElementById("power").innerHTML = "Power      : " + P.toFixed();
   //if weight blank ...
   //document.getElementById("wf").innerHTML = "Weight factor : " + f.toFixed(3);
-  document.getElementById("mass").innerHTML = "Weight : " + w;
+  //document.getElementById("mass").innerHTML = "Weight : " + w;
   if (ats < 10) {
     document.getElementById("adTime").innerHTML = "Adj. Split : " + atm + ":0" + ats.toFixed(1);
   }
@@ -51,10 +51,10 @@ function myFunction() {
   document.getElementById("adDist").innerHTML = "Adj. distance : " + ad.toFixed();
   //if set dist blank ...
   if (sps < 10) {
-    document.getElementById("preSplit").innerHTML = "For " + ds + " m, Predicted split : " + spm + ":0" + sps.toFixed(1);
+    document.getElementById("preSplit").innerHTML = "For " + ds + " m, predicted split : " + spm + ":0" + sps.toFixed(1);
   }
   else {
-    document.getElementById("preSplit").innerHTML = "For " + ds + " m, Predicted split : " + spm + ":" + sps.toFixed(1);
+    document.getElementById("preSplit").innerHTML = "For " + ds + " m, predicted split : " + spm + ":" + sps.toFixed(1);
   }
   //document.getElementById("preSplitSec").innerHTML = sps.toFixed(1);
 
