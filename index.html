@@ -1,6 +1,8 @@
 <!doctype html>
 <html manifest="manifest.appcache" lang="en">
+
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -12,7 +14,8 @@
 
     <link rel="manifest" href="manifest.json">
     <!-- See https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android -->
-    <meta name="theme-color" content="#db5945">
+
+    <meta name="theme-color" content="#006400">
 
     <link rel="icon" href="favicon.ico">
 
@@ -26,6 +29,7 @@
 
   <body style="max-width:600px; margin:auto; border:0px solid #ccc">
     <div class="page-wrap">
+
       <header class="w3-container w3-card-4 w3-theme">
         <h1>Erg Data</h1>
       </header>
@@ -40,44 +44,51 @@
             <label class="w3-label w3-text-green">Distance (m)</label>
             <input class="w3-input w3-border" id="distance" type="text">
 
-            <label class="w3-label w3-text-green">Time mins</label>
+            <label class="w3-label w3-text-green">Time (mins)</label>
             <input class="w3-input w3-border" id="min" type="text">
 
-            <label class="w3-label w3-text-green">Secs</label>
+            <label class="w3-label w3-text-green">Time (secs)</label>
             <input class="w3-input w3-border" id="sec" type="text">
 
-            <label class="w3-label w3-text-green">Weight</label>
+            <label class="w3-label w3-text-green">Weight (kg)</label>
             <input class="w3-input w3-border" id="weight" type="text">
 
-            <label class="w3-label w3-text-green">Set Distance</label>
+            <label class="w3-label w3-text-green">Set Distance (m)</label>
             <input class="w3-input w3-border" id="setDist" type="text">
 
           </form>
+
         </div>
 
         <div id="resultsSection" class="w3-container" style="display: none;">
+
           <h5 class="w3-text-green">Recorded:</h5>
+
           <p id="dist">Distance : -</p>
           <p id="time">Time : -</p>
-          <p id="split">Split time : -</p>
+          <p id="split">Split : -</p>
           <p id="power">Power      : -</p>
-          
+
           <h5 class="w3-text-green">Weight adjusted:</h5>
-          <!--<p id="wf">Weight factor : -</p>-->
-          <!--<p id="mass">Weight : -</p>-->
-          <p id="adTime">Weight adjusted time : -</p>
-          <p id="adDist">Weight adjusted distance : -</p>
-          
+
+          <p id="adTime">Adj. time : -</p>
+          <p id="adSplit">Adj. split : -</p>
+
           <h5 class="w3-text-green">Predicted time (Paul's Law):</h5>
-          <p id="preSplit">For - m, predicted split = -</p>
+
+          <p id="preDist">Distance : -</p>
+          <p id="preTime">Predicted time : -</p>
+          <p id="preSplit">Predicted split : -</p>
+
         </div>
+
       </div>
+
     </div>
 
     <button id="button" type="button" class="button" onclick="myFunction()">Calculate</button>
 
     <footer class="site-footer">
-    <!-- <footer class="w3-container w3-theme-l2" style="position:relative">-->
       <p>&copy; 2016 Clive Keeler</p>
     </footer>
 
