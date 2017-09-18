@@ -42,20 +42,19 @@
           <form class="w3-container">
 
             <label class="w3-label w3-text-green">Distance (m)</label>
-            <input class="w3-input w3-border" id="distance" type="tel" pattern="\d*">
+            <input class="w3-input w3-border" id="distance" type="number" placeholder="500" step="0.1" min="100" max="100000">
 
             <label class="w3-label w3-text-green">Time (mins)</label>
-            <input class="w3-input w3-border" id="min" type="tel" pattern="\d*">
+            <input class="w3-input w3-border" id="min" type="number" placeholder="1" step="1" min="0" max="120">
 
             <label class="w3-label w3-text-green">Time (secs)</label>
-            <input class="w3-input w3-border" id="sec" type="tel" pattern="\d*">
+            <input class="w3-input w3-border" id="sec" type="number" placeholder="0.0" step="0.1" min="0" max="59.9">
 
             <label class="w3-label w3-text-green">Weight (kg)</label>
-            <input class="w3-input w3-border" id="weight" type="tel" pattern="\d*">
+            <input class="w3-input w3-border" id="weight" type="number" placeholder="70.0" step="0.1" min="40" max="200">
 
             <label class="w3-label w3-text-green">Set Distance (m)</label>
-            <input class="w3-input w3-border" id="setDist" type="tel" pattern="\d*">
-
+            <input class="w3-input w3-border" id="setDist" type="number" placeholder="500" step="100" min="100" max="100000"">
           </form>
 
         </div>
